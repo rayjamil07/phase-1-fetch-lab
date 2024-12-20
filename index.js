@@ -1,5 +1,5 @@
 function fetchBooks() {
-  return nfetch("https://anapioficeandfire.com/api/books/")
+  return fetch("https://anapioficeandfire.com/api/books/")
   .then(response => response.json())
   .then(json => renderBooks(json))
 }
